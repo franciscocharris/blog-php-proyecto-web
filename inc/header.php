@@ -11,7 +11,7 @@
   <title>Blog ADSI-56</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
   <!-- Custom styles for this template -->
   <link href="css/blog.css" rel="stylesheet">
@@ -35,7 +35,7 @@
             </a>
           </li>
 
-          <?php if(!isset($_SESSION['usuario'])): ?>
+          <?php if (!isset($_SESSION['usuario'])) : ?>
             <li class="nav-item">
               <a class="nav-link" href="login.php">login</a>
             </li>
@@ -43,16 +43,16 @@
             <li class="nav-item">
               <a class="nav-link" href="register.php">Registrate</a>
             </li>
-          <?php endif;?>
-          
-          <?php if(isset($_SESSION['usuario'])): ?>
+          <?php endif; ?>
+
+          <?php if (isset($_SESSION['usuario'])) : ?>
             <li class="nav-item">
               <a class="nav-link" href="funciones/cerrar-session.php">Cerrar sesion</a>
             </li>
-          <?php endif;?>
-            <li class="nav-item">
-              <a class="nav-link" href="contactanos.php">Contactanos</a>
-            </li>
+          <?php endif; ?>
+          <li class="nav-item">
+            <a class="nav-link" href="contactanos.php">Contactanos</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -60,4 +60,4 @@
 
   <!-- Page Content -->
   <div class="container">
-      <div class="row">
+    <div class="row">
